@@ -1,4 +1,10 @@
 <?php
+declare(strict_types=1);
+
+namespace App\Dao;
+
+use PDO;
+
 class StudentDao extends Dao {
     // INSERT
     public function add(array $data): string {

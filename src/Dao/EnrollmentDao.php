@@ -1,4 +1,10 @@
 <?php
+declare(strict_types=1);
+
+namespace App\Dao;
+
+use PDO;
+
 class EnrollmentDao extends Dao {
     // 登録（新規または上書き）
     public function register(array $data): bool {

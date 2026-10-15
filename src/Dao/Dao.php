@@ -1,9 +1,15 @@
 <?php
+declare(strict_types=1);
+
+namespace App\Dao;
+
+use PDO;
+
 class Dao {
     protected PDO $pdo;
 
     public function __construct() {
-        $cfg = require __DIR__ . '/config.php';
+        $cfg = require __DIR__ . '/../../config.php';
         $this->pdo = new PDO(
             $cfg['dsn'],
             $cfg['username'],
