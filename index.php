@@ -4,7 +4,7 @@ require __DIR__ . '/vendor/autoload.php';
 use App\Dao\EnrollmentDao;
 use App\Dao\StudentDao;
 use App\GradeService;
-
+ echo "履修登録完了";
 // ---------- 学生情報 ----------
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'add_student') {
     $dao = new StudentDao();
