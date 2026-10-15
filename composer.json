@@ -1,0 +1,11 @@
+{
+    "name": "higenobu/school-simple",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0"
+    }
+}
